@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the.weatherify - Find all weather and forecast details anytime and anywhere</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5c324d89d4.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/831/831268.png">
+</head>
+<body>
+    <div id="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <div id="body-container">
+    <!-- <img id="background" class="background" src="Images/default.jpg" alt="" srcset=""></div> -->
+    <div id="site-head" class="weather-app">
+        <h3>the.weatherify</h3>
+    </div>
+    <div id="weather-display" class="weather-display">
+        <div class="temperature"><h1 id="temp"> --°C</h1></div>
+        <div  class="city-name"><h2 id="city"> </h2>
+            <p class="weatherMain" id="weatherMain">search for your city</p>
+        </div>
+        <div class="weather-condition">
+            <img id="weatherConditionImg" src="Images/mist1.png" alt="" srcset="">
+            <!-- <p class="weatherMain" id="weatherMain">Cloudy</p> -->
+        </div>
+
+    </div>
+
+    <div  class="weather-menu">
+        <button><i class="fa fa-search" class="search-btn" id="Search-btn" aria-hidden="true"></i></button>
+        <div class="container">
+            <div class="input-city">
+                <input id="input-city" type="text" placeholder="Another Location">
+                <hr>
+            </div>
+            <div class="weather-details">
+                <div class="detail-title">
+                    <p class="detail1">Weather Details</p>
+                </div>
+                    <ul>
+                        <li>Description<p id="Description"> - </p></li>
+                        <li>Humidity<p id="humidity"> - </p></li>
+                        <li>Feel-like<p id="feel-like"> - </p></li>
+                        <li>Pressure<p id="pressure"> - </p></li>
+                        <li>Wind<p id="wind"> - </p></li>
+                        <li>Temp-Max<p id="tempmax"> - </p></li>
+                        <li>Temp-Min<p id="tempmin"> - </p></li> 
+                    </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
